@@ -3,9 +3,14 @@ import styles from './App.scss';
 import List from '../List/ListContainer';
 import PropTypes from 'prop-types';
 import Search from '../Search/SearchContainer';
+import {listData} from '../../data/dataStore';
 
 
 class App extends React.Component {
+
+  static = {
+    lists: listData || [],
+  }
 
   static propTypes = {
     title: PropTypes.node,
