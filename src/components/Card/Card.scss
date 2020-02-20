@@ -19,10 +19,11 @@ span {
   position: absolute;
   top: 15%;
   right: 5%;
-  color: $color-warning;
+  color: $color-questions;
   display: none;
   cursor: pointer;
   font-weight: bold;
+  padding: 10px;
 }
 
 .component:hover {

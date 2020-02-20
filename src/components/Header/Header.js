@@ -2,7 +2,6 @@ import React from 'react';
 import {NavLink, Link} from 'react-router-dom';
 import styles from './Header.scss';
 import Container from '../Container/Container';
-//import PropTypes from 'prop-types';
 import Icon from '../Icon/Icon';
 import {settings} from '../../data/dataStore';
 
