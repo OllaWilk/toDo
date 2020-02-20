@@ -6,6 +6,7 @@ class Card extends React.Component {
 
     static propTypes = {
       title: PropTypes.node.isRequired,
+      deleteCard: PropTypes.func,
     }
 
     render () {
@@ -15,6 +16,7 @@ class Card extends React.Component {
       return (
         <div className= {styles.component}>
           <h3 className= {styles.title}> {title}</h3>
+          <span className={styles.title}>X</span>
         </div>
       );
     }

@@ -8,3 +8,26 @@
   margin: 0 0 $base-size 0;
   border-radius: $radius;
 }
+
+.title {
+  text-align: center;
+  font-size: ($base-size*1.5);
+  margin: 0 0 ($base-size*1.5) 0;
+}
+
+span {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  color: $color-warning;
+  display: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.component:hover {
+  span {
+    display: block;
+  }
+}
+

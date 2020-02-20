@@ -6,12 +6,32 @@ export const settings = {
     buttonCancel: 'Cancel',
     defaultText: 'Add new item',
   },
+  header: {
+    icon: 'cat',
+    links: {
+      home: {
+        title: 'Home',
+        path: '/',
+      },
+      info: {
+        title: 'Info',
+        path: '/info',
+      },
+      faq: {
+        title: 'FAQ',
+        path: '/faq',
+      },
+      active: 'active',
+    },
+  },
+
   search: {
     defaultText: 'Search...',
     icon: 'search',
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  headerIcon: 'cat',
 };
 
 export const pageContents = {
@@ -70,6 +90,32 @@ export const listData = {
       ],
     },
   ],
+};
+
+export const info = {
+  title: 'Info',
+  image: 'https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  textConten: 'Plan, organize, and manage your to-dos.',
+};
+
+export const faq = {
+  title: 'FAQ',
+  image: 'https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  textContent: 'Before you ask see frequently asked questions:',
+  questions: {
+    question1: {
+      question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ?',
+      answer: 'Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus.',
+    },
+    question2: {
+      question: 'Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci ?',
+      answer: 'Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque.',
+    },
+    question3: {
+      question: 'Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat ?',
+      answer: 'Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque.',
+    },
+  },
 };
 
 const lists = [

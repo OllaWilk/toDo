@@ -1,0 +1,20 @@
+@import '../../styles/settings.scss';
+
+.article {
+    background: $color-dark;
+    padding: $base-size*1.5;
+    margin: $base-size;
+    border-radius: $radius;
+}
+
+.question {
+    color: $color-success;
+    margin: 0;
+    font-size: $base-size*1.5;
+
+}
+
+.answer {
+    color: $color-light;
+    margin: $base-size 0;
+}
