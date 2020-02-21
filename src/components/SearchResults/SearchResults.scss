@@ -1,0 +1,21 @@
+@import '../../styles/settings.scss';
+
+.component {
+  position: relative;
+  margin: 0 auto;
+  padding: $base-size;
+  border-radius: $radius;
+  width: 50%;
+}
+
+.cards {
+  color: $color-dark;
+}
+
+@media (max-width: 767px) {
+
+  .component {
+    width: 100%;
+  }
+
+}
