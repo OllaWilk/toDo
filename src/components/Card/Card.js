@@ -6,17 +6,23 @@ class Card extends React.Component {
 
     static propTypes = {
       title: PropTypes.node.isRequired,
-      deleteCard: PropTypes.func,
+      removeCard: PropTypes.func,
+      id: PropTypes.node.isRequired,
     }
 
     render () {
 
-      const {title} = this.props;
+      const {title, removeCard, id} = this.props;
 
       return (
         <div className= {styles.component}>
           <h3 className= {styles.title}> {title}</h3>
-          <span className={styles.title}>X</span>
+          <span className={styles.title} onClick={() => {
+            if(window.confirm('Are You Shure ?')) {
+              removeCard(id);
+            }
+          }
+          }>X</span>
         </div>
       );
     }

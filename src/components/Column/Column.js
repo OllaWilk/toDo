@@ -1,12 +1,16 @@
 import React from 'react';
 import styles from './Column.scss';
 import PropTypes from 'prop-types';
-import Card from '../Card/Card';
+import Card from '../Card/CardContainer';
 import Creator from '../Creator/Creator';
 import Icon from '../Icon/Icon';
 import {settings} from '../../data/dataStore';
 
 class Column extends React.Component {
+
+    state= {
+      cards: this.props.cards,
+    }
 
     static propTypes= {
       title: PropTypes.node.isRequired,
