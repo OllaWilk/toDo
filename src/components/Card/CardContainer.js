@@ -4,7 +4,7 @@ import Card from '../Card/Card';
 
 const mapDispatchToProps = (dispatch, props) => ({
   removeCard: id => dispatch(createActionRemoveCard({
-    columnId: props.id,
+    //columnId: props.id,
     id,
   })),
 
